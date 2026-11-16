@@ -18,7 +18,12 @@ app.post("/api/chat", async (req, res) => {
         const messages = req.body.messages;
 
        
-       
+        const response = await fetch(
+           
+        );
+
+        
+
         // Header untuk streaming
       
 
