@@ -62,7 +62,10 @@ app.post("/api/chat", async (req, res) => {
 
                 try {
 
-                    
+                    const json = JSON.parse(data);
+
+                    const content =
+                        json.choices?.[0]?.delta?.content;
 
                     if (content) {
                        
