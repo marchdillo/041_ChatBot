@@ -44,7 +44,7 @@ app.post("/api/chat", async (req, res) => {
 
             for (const line of lines) {
 
-               
+                const trimmedLine = line.trim();
 
                 
 
