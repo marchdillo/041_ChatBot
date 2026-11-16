@@ -42,7 +42,26 @@ app.post("/api/chat", async (req, res) => {
             // Simpan bagian terakhir karena mungkin belum lengkap
             buffer = lines.pop();
 
-           
+            for (const line of lines) {
+
+               
+
+                
+
+               
+
+                try {
+
+                    
+
+                    if (content) {
+                       
+                    }
+
+                } catch (error) {
+                    
+                }
+            }
         }
 
         
