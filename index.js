@@ -29,7 +29,21 @@ app.post("/api/chat", async (req, res) => {
         // Header untuk streaming
       
 
-       
+        while (true) {
+            const { done, value } = await reader.read();
+
+            if (done) {
+                
+            }
+
+            
+
+
+            // Simpan bagian terakhir karena mungkin belum lengkap
+          
+
+           
+        }
 
         
 
