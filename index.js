@@ -46,7 +46,15 @@ app.post("/api/chat", async (req, res) => {
 
                 const trimmedLine = line.trim();
 
-                
+                if (!trimmedLine) {
+                    continue;
+                }
+
+                if (!trimmedLine.startsWith("data:")) {
+                    continue;
+                }
+
+                const data = trimmedLine.slice(5).trim();
 
                
 
