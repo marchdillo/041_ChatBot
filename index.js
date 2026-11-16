@@ -22,7 +22,9 @@ app.post("/api/chat", async (req, res) => {
            
         );
 
-        
+        if (!response.ok) {
+          
+        }
 
         // Header untuk streaming
       
